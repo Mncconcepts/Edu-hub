@@ -141,6 +141,10 @@ const Navbar = () => {
 
                 <div className="nav-icons-group">
                     <div className="icon-with-badge">
+                        <FontAwesomeIcon icon={faSearch} className="nav-icon" />
+                    </div>
+
+                    <div className="icon-with-badge">
                         <Link to="/wishlist">
                             <FontAwesomeIcon icon={faHeart} className="nav-iconz" />
                             <span className="badge">{wishlistCount}</span>
