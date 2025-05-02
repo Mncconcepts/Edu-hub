@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "title": "2024/2025 Admission in Progress",
+      "description": "Available Programs: B.Sc. Nursing, B.Sc. Nursing (2 years top-up programme for RN holders...)",
+      "date": "January 20, 2025",
+      "image": "/places2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Ghanas Environmental Devastation Resolved Through Religious Practices Prof Awuah-Nyamekye",
+      "description": "Former Head of the Department of Religion and Human Values at the University speaks on faith-based environmental protection...",
+      "date": "May 15, 2023",
+      "image": "/places5.jpg"
+    },
+    {
+      "id": 3,
+      "title": "New Global Book Published on COVID-19 Across Africa",
+      "description": "A new global book explores the impact and response to COVID-19 across African nations.",
+      "date": "April 10, 2022",
+      "image": "/places1.png"
+    },
+    {
+      "id": 4,
+      "title": "CIUCC Signs MOU with West End University College",
+      "description": "CIUCC partners with WEUC to enhance academic and cultural collaboration.",
+      "date": "April 25, 2019",
+      "image": "/places2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Certificate in Early Childhood Education (Intensive)",
+      "description": "Modules include Montessori (ECE Pedagogy), Child Health and Development, Phonics / Literacy, and more. Face-to-face and online sessions available.",
+      "date": "July 30, 2022",
+      "image": "/places3.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "6 Weeks Intensive Certificate Programme",
+      "description": "Specialized certificate program affiliated with the University of Cape Coast designed to provide key foundational education training in 6 weeks.",
+      "date": "July 2022",
+      "image": "/places4.jpeg"
+    }
+    
+  ]
+  

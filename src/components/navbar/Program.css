@@ -1,0 +1,66 @@
+.program-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.program-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #002147;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.program-intro {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.faculty-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-faculties,
+.right-faculties {
+    flex: 1;
+    min-width: 280px;
+}
+
+.faculty {
+    margin-bottom: 1.5rem;
+}
+
+.faculty h3 {
+    font-size: 1.1rem;
+    color: #004080;
+    margin-bottom: 0.3rem;
+}
+
+.faculty ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+.faculty ul li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .program-section {
+        flex-direction: column;
+    }
+
+    .left-faculties,
+    .right-faculties {
+        width: 100%;
+    }
+}

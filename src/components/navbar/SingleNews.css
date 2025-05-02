@@ -1,0 +1,26 @@
+.single-news-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+    background: #222;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+
+.not-found {
+    padding: 2rem;
+    color: red;
+    text-align: center;
+}

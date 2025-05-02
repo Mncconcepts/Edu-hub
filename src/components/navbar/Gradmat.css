@@ -1,0 +1,76 @@
+.section {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+  }
+  
+  .section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .left-column p,
+  .right-column p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: start;
+    font-size: small;
+    line-height: 1.6rem;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .fee-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #d35400;
+    margin-top: 1rem;
+  }
+  
+  .registrar {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2rem;
+    color: #004080;
+  }
+  
+  @media (max-width: 768px) {
+    .section-content {
+      flex-direction: column;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+  
+    .section-title {
+      font-size: 1.3rem;
+    }
+  }

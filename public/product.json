@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "price": 10,
+    "image": "/book1.jpeg",
+    "description": "This is a high-quality product designed for everyday use. Built to last, it combines durability with simplicity and comes at an affordable price point for all users."
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "price": 15,
+    "image": "/book1.jpeg",
+    "description": "Product 2 is perfect for anyone looking for reliability and style. It features a sleek design and is made from premium materials that offer excellent longevity."
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "price": 20,
+    "image": "/book1.jpeg",
+    "description": "Experience the perfect balance of performance and value with Product 3. It’s engineered for efficiency and ensures a smooth experience in all environments."
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "price": 12,
+    "image": "/book1.jpeg",
+    "description": "An ideal solution for quick and easy tasks, Product 4 offers user-friendly features and compact design, making it suitable for both home and office use."
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "price": 18,
+    "image": "/book1.jpeg",
+    "description": "Product 5 stands out with its elegant craftsmanship and reliable performance. A great choice for those who value aesthetics as much as functionality."
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "price": 22,
+    "image": "/book1.jpeg",
+    "description": "Built for power users, Product 6 offers exceptional speed, top-tier components, and a premium finish that ensures satisfaction and performance over time."
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "price": 14,
+    "image": "/book1.jpeg",
+    "description": "Product 7 blends affordability with quality. It is easy to use, highly functional, and a must-have for anyone in need of dependable utility tools."
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "price": 16,
+    "image": "/book1.jpeg",
+    "description": "Modern, sleek, and effective, Product 8 is engineered to deliver consistent results. A versatile item suitable for all kinds of users and workspaces."
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "price": 19,
+    "image": "/book1.jpeg",
+    "description": "Product 9 features an innovative design backed by solid performance. With enhanced usability and attractive styling, it’s an excellent addition to your setup."
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "price": 25,
+    "image": "/book1.jpeg",
+    "description": "A premium offering in our lineup, Product 10 delivers unmatched quality, top-tier components, and an ergonomic experience tailored for demanding tasks."
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "price": 17,
+    "image": "/book1.jpeg",
+    "description": "Crafted for modern lifestyles, Product 11 merges minimalist design with outstanding functionality. It is ideal for people who prioritize both form and purpose in daily-use items."
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "price": 23,
+    "image": "/book1.jpeg",
+    "description": "Product 12 is built for precision and durability. Designed with high-grade materials, it is an excellent option for professionals and enthusiasts who demand more from their tools."
+  },
+  {
+    "id": 13,
+    "name": "Product 13",
+    "price": 11,
+    "image": "/book1.jpeg",
+    "description": "This product offers a practical solution for everyday tasks. Its compact size, combined with reliable features, makes Product 13 a favorite among budget-conscious users."
+  },
+  {
+    "id": 14,
+    "name": "Product 14",
+    "price": 21,
+    "image": "/book1.jpeg",
+    "description": "A fusion of innovation and ease-of-use, Product 14 delivers consistent results across various scenarios. It's designed to make your workflow smoother and more enjoyable."
+  },
+  {
+    "id": 15,
+    "name": "Product 15",
+    "price": 26,
+    "image": "/book1.jpeg",
+    "description": "With enhanced performance and a robust exterior, Product 15 stands out as a go-to choice for users seeking endurance and strength in a sleek design."
+  },
+  {
+    "id": 16,
+    "name": "Product 16",
+    "price": 13,
+    "image": "/book1.jpeg",
+    "description": "Product 16 provides exceptional value with its clever design and user-centric features. Ideal for fast-paced environments, it won’t let you down when you need it most."
+  },
+  {
+    "id": 17,
+    "name": "Product 17",
+    "price": 29,
+    "image": "/book1.jpeg",
+    "description": "Engineered for excellence, Product 17 combines cutting-edge technology with elegant looks. It's a premium choice for those who appreciate sophistication and quality."
+  },
+  {
+    "id": 18,
+    "name": "Product 18",
+    "price": 24,
+    "image": "/book1.jpeg",
+    "description": "Reliable and stylish, Product 18 is crafted to meet your everyday needs with ease. Its smooth interface and dependable performance make it a customer favorite."
+  }
+]

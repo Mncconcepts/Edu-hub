@@ -1,0 +1,72 @@
+ [
+    {
+      "id": "course1",
+      "title": "Learn PHP Programming From Scratch",
+      "author": "roroglass",
+      "category": ["Programming", "Technology"],
+      "duration": "10 Weeks",
+      "level": "All levels",
+      "lessons": 12,
+      "quizzes": 3,
+      "students": 0,
+      "description": "PHP is a server scripting language, and a powerful tool for making dynamic and interactive...",
+      "price": "₵900.00",
+      "image": "/places1.png"
+    },
+    {
+      "id": "course2",
+      "title": "Learning Python for Data Analysis and Visualization",
+      "author": "roroglass",
+      "category": ["Technology", "Web Development"],
+      "duration": "10 Weeks",
+      "level": "All levels",
+      "lessons": 11,
+      "quizzes": 3,
+      "students": 0,
+      "description": "In this tutorial, I am going to help you to perform data analysis and visualization with...",
+      "price": "₵950.00",
+      "image": "/places2.jpg"
+    },
+    {
+      "id": "course3",
+      "title": "Build A Full Web Chat App From Scratch",
+      "author": "roroglass",
+      "category": ["Programming", "Web Development"],
+      "duration": "10 Weeks",
+      "level": "All levels",
+      "lessons": 11,
+      "quizzes": 3,
+      "students": 0,
+      "description": "In this tutorial, I am going to help you create your own chat application. You can...",
+      "price": "₵1,000.00",
+      "image": "/places3.jpeg"
+    },
+    {
+      "id": "course4",
+      "title": "The Complete JavaScript Course for Beginner",
+      "author": "roroglass",
+      "category": ["Programming", "Web Development"],
+      "duration": "10 Weeks",
+      "level": "All levels",
+      "lessons": 11,
+      "quizzes": 3,
+      "students": 0,
+      "description": "In this tutorial, I am going to help you create your own applications with JavaScript. You...",
+      "price": "₵800.00",
+      "image": "/places4.jpeg"
+    },
+    {
+      "id": "course5",
+      "title": "The Complete Web Developer Course",
+      "author": "roroglass",
+      "category": ["Programming", "Technology"],
+      "duration": "10 Weeks",
+      "level": "All levels",
+      "lessons": 11,
+      "quizzes": 3,
+      "students": 0,
+      "description": "In this tutorial, I am going to help you create your own web application. You can...",
+      "price": "₵1,500.00",
+      "image": "/places5.jpg"
+    }
+  ]

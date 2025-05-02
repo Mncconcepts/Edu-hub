@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(267deg, #ffffff 9.36%, #ffffff 100%);
+  color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+}
+

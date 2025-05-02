@@ -1,0 +1,91 @@
+.news3-card {
+    display: flex;
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 2px 6px rgba(184, 181, 181, 0.06);
+    margin-top: 2rem;
+  }
+  
+  .news3-date-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #dbb808;
+    width: 80px;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .news3-date-top {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .news3-dots {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #0c2340;
+    border-radius: 50%;
+  }
+  
+  .news3-day {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c2340;
+    margin-top: 4px;
+  }
+  
+  .news3-month {
+    font-size: 14px;
+    color: #0c2340;
+  }
+  
+  .news3-year {
+    background: #0c2340;
+    color: white;
+    font-weight: bold;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .news3-content {
+    flex: 1;
+  }
+  
+  .news3-title {
+    font-weight: bold;
+    color: #0c2340;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .news3-desc {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .news3-meta {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .news3-time {
+    font-weight: bold;
+  }
+  
+  .news3-location {
+    font-weight: bold;
+    color: #0c2340;
+  }

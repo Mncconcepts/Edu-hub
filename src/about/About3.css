@@ -1,0 +1,165 @@
+.aabout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 2rem;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+.posts-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.posts-section h2,
+.certificate-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.post {
+    display: flex;
+    gap: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    transition: transform 0.3s;
+    overflow-x: hidden;
+}
+
+.post:hover {
+    transform: translateY(-4px);
+}
+
+.post img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.post h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+    text-align: start;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.post .date {
+    font-size: 14px;
+    color: #137dbb;
+    margin-bottom: 8px;
+    text-align: start;
+}
+
+.post p {
+    font-size: small;
+    color: #555;
+    text-align: start;
+    margin-top: 5px;
+}
+
+.certificate-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 38%;
+}
+
+.certificate-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    overflow-x: hidden;
+}
+
+.certificate-section img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+    .aabout-container {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .posts-section,
+    .certificate-section {
+        max-width: 100%;
+    }
+
+    .post {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .aabout-container {
+        padding: 16px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    .posts-section h2,
+    .certificate-section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .aabout-container {
+        padding: 16px;
+        gap: 20px;
+    }
+
+    .post {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    .post p,
+    .post .date {
+        font-size: 13px;
+    }
+
+    .posts-section h2,
+    .certificate-section h2 {
+        font-size: 22px;
+    }
+
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+
+    .certificate-section {
+        max-width: 100%;
+    }
+}
