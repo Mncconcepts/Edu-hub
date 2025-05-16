@@ -623,12 +623,12 @@
     animation: slideDown 0.4s ease-in-out;
 }
 
-/* The alert popup */
+
 .slide-in-wishlist {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Always perfectly center horizontally and vertically */
+    transform: translate(-50%, -50%);
     background-color: #157a2e;
     color: white;
     padding: 24px 36px;
@@ -636,12 +636,11 @@
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    z-index: 99999; /* super high above everything */
+    z-index: 99999;
     animation: fadeIn 0.5s forwards;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-/* Wishlist button inside the popup */
 .view-wishlist-btn {
     background-color: white;
     color: #157a2e;
@@ -654,12 +653,10 @@
     transition: transform 0.3s;
 }
 
-/* Hover effect */
 .view-wishlist-btn:hover {
     transform: scale(1.05);
 }
 
-/* Fade In Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
