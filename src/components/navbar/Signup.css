@@ -1,10 +1,18 @@
 .bodyyy {
-  background: linear-gradient(to bottom, #a5b8dd, #687486c7);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to bottom, #a5b8dd, #6583a7a9),
+    url('/places2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .forms-container {

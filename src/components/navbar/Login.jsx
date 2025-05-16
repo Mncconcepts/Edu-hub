@@ -80,7 +80,7 @@ const Login = () => {
       {isLoading && (
         <div className="loading-animation">
           <div className="circle-loader"></div>
-          <p>Logging in...</p>
+          <p className="text-white">Logging in...</p>
         </div>
       )}
 

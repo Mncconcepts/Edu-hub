@@ -48,7 +48,7 @@ const CheckOut = () => {
             </div>
             {/* Left Side - Selected Products */}
             <div className="cartt-summary">
-                <h2>Your Order Status</h2>
+                <h2>Order Status</h2>
                 <div className="cart-items-container">
                     {cart.length > 0 ? (
                         cart.map((item) => (

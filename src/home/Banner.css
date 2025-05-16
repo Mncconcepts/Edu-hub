@@ -59,19 +59,22 @@
 }
 
 .text-content h2 {
-    font-size: 3.5rem;
+    font-size: 4.2rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 2px;
 }
 
 .text-content p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 12px;
+    max-width: 500px;
+    line-height: 2.7rem;
 }
 
 .text-content a button {
-    padding: 0.6rem 1.4rem;
-    font-size: 0.95rem;
+    padding: 0.7rem 1.7rem;
+    font-size: 1rem;
+    font-weight: bold;
     background-color: #1452a3;
     color: #fff;
     border: none;
@@ -148,9 +151,11 @@
 
 @media (max-width: 480px) {
     .text-content h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: bold;
-        margin-bottom: 12px;
+        margin-bottom: 2px;
+        margin-top: 2rem;
+        font-weight: bold;
     }
 
     .banner-container {
@@ -158,9 +163,10 @@
     }
 
     .text-content p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 5px;
-        max-width: 200px;
+        max-width: 300px;
+        line-height: 2rem;
     }
 
     .text-content button {

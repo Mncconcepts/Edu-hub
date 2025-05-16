@@ -9,6 +9,7 @@ import {
     faGripLines
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { FaSignInAlt } from "react-icons/fa";
 
 const Navbar = () => {
     const location = useLocation();
@@ -17,7 +18,19 @@ const Navbar = () => {
     const [showTopNav, setShowTopNav] = useState(false);
     const [cartCount, setCartCount] = useState(0);
     const [wishlistCount, setWishlistCount] = useState(0);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [products, setProducts] = useState([]);
+    const [filtered, setFiltered] = useState([]);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+    const [showNotification, setShowNotification] = useState(false);
 
+
+    useEffect(() => {
+        fetch('/product.json')
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, []);
 
     const updateCounts = () => {
         const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
@@ -27,6 +40,17 @@ const Navbar = () => {
         setCartCount(totalCartItems);
         setWishlistCount(wishlistItems.length);
     };
+
+    useEffect(() => {
+        if (searchTerm) {
+            const result = products.filter(p =>
+                p.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            setFiltered(result);
+        } else {
+            setFiltered([]);
+        }
+    }, [searchTerm, products]);
 
 
     const toggleDropdown = (menu) => {
@@ -115,6 +139,12 @@ const Navbar = () => {
 
     return (
         <>
+            {showNotification && (
+                <div className="notification-bar">
+                    Product added to cart!
+                </div>
+            )}
+
             {/* Top Navbar */}
             <div className={`top-navbar ${showTopNav ? "show" : ""}`}>
                 <div className="contact-info">
@@ -140,9 +170,6 @@ const Navbar = () => {
                 </div>
 
                 <div className="nav-icons-group">
-                    <div className="icon-with-badge">
-                        <FontAwesomeIcon icon={faSearch} className="nav-icon" />
-                    </div>
 
                     <div className="icon-with-badge">
                         <Link to="/wishlist">
@@ -303,14 +330,90 @@ const Navbar = () => {
                     </li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
-                <div className="search-drop relative w-full max-w-md">
+                <div className="search-container">
                     <input
                         type="text"
                         placeholder="Search Here"
-                        className="w-full p-3 pl-10 text-gray-800 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        value={searchTerm}
+                        onChange={e => setSearchTerm(e.target.value)}
+                        className="search-input"
                     />
+
+                    {filtered.length > 0 && (
+                        <div className="search-dropdown">
+                            {filtered.map(item => (
+                                <div
+                                    key={item.id}
+                                    className="dropdown-item"
+                                    onClick={() => {
+                                        setSelectedProduct(item);
+                                        setSearchTerm('');
+                                        setFiltered([]);
+                                    }}
+                                >
+                                    {item.name}
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
+
+                <Link to="/login">
+                    <button className="login-btn mt-3"><FaSignInAlt /> Login</button>
+                </Link>
             </div>
+
+            {selectedProduct && (
+                <div className="product-popup">
+                    <div className="popup-card">
+                        <img
+                            src={selectedProduct.image}
+                            alt={selectedProduct.name}
+                        />
+                        <h2>{selectedProduct.name}</h2>
+                        <p>{selectedProduct.description}</p>
+                        <p className="price">₵ {selectedProduct.price}</p>
+
+                        <input
+                            type="number"
+                            min="1"
+                            value={quantity}
+                            onChange={e => setQuantity(Number(e.target.value))}
+                        />
+
+                        <div className="button-group">
+                            <button
+                                className="add-cart"
+                                onClick={() => {
+                                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                                    cart.push({ ...selectedProduct, quantity });
+                                    localStorage.setItem('cart', JSON.stringify(cart));
+
+                                    setShowNotification(true);
+                                    setTimeout(() => setShowNotification(false), 3000);
+                                }}
+                            >
+                                Add to Cart
+                            </button>
+
+                            <button
+                                className="view-cart"
+                                onClick={() => window.location.href = '#cart'}
+                            >
+                                View Cart
+                            </button>
+
+                            <button
+                                className="cancel"
+                                onClick={() => setSelectedProduct(null)}
+                            >
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
         </>
     );
 };

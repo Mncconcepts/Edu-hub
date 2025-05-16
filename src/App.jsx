@@ -28,7 +28,6 @@ const PageLoader = ({ children, setLoading }) => {
 
   const isAuthPage = location.pathname === "/signup" || location.pathname === "/login";
 
-  // Automatically navigate to /home if the user lands on the root or any other path
   useEffect(() => {
     if (location.pathname === "/" || location.pathname === "/signup" || location.pathname === "/login") {
       navigate("/home", { replace: true });
@@ -49,8 +48,6 @@ const PageLoader = ({ children, setLoading }) => {
 
   return showContent ? children : null;
 };
-
-
 
 const ScrollRestoration = () => {
   const location = useLocation();
@@ -80,24 +77,28 @@ const ScrollRestoration = () => {
   return null;
 };
 
-const AppContent = ({ user, handleLogin }) => (
-  <>
-    <Navbar user={user} />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<Signup onLogin={handleLogin} />} />
-      <Route path="/login" element={<Login onLogin={handleLogin} />} />
-      <Route path="/news" element={<News />} />
-      <Route path="/singlenews/:id" element={<SingleNews />} />
-    </Routes>
-    <div className="main-container">
-      <div className="content">
-        <Outlet />
+const AppContent = ({ user, handleLogin }) => {
+  const location = useLocation();
+
+  return (
+    <>
+      <Navbar user={user} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup onLogin={handleLogin} />} />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/singlenews/:id" element={<SingleNews />} />
+      </Routes>
+      <div className="main-container">
+        <div className="content">
+          <Outlet />
+        </div>
+        {!location.pathname.startsWith("/dashboard") && <Footer />}
       </div>
-      <Footer />
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -121,9 +122,7 @@ const App = () => {
   return (
     <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
       <ScrollRestoration />
-
       {loading && <Loader />}
-
       <PageLoader setLoading={setLoading}>
         <AppContent user={user} handleLogin={handleLogin} />
       </PageLoader>

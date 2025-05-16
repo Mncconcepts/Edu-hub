@@ -33,6 +33,9 @@ import Cart from './components/navbar/Cart.jsx';
 import Wishlist from './components/navbar/Wishlist.jsx';
 import ForgotPassword from './components/navbar/ForgotPassword.jsx';
 import CheckOut from './components/navbar/CheckOut.jsx';
+import Dashboard from './dashboard/Dashboard.jsx';
+import Profile from './components/navbar/Profile.jsx';
+import Notification from './components/navbar/Notification.jsx';
 
 const router = createHashRouter([
   {
@@ -59,7 +62,10 @@ const router = createHashRouter([
       { path: "/shop", element: <Shop /> },
       { path: "/cart", element: <Cart /> },
       { path: "/wishlist", element: <Wishlist /> },
-      { path: "/checkout", element: <CheckOut /> }
+      { path: "/checkout", element: <CheckOut /> },
+      { path: "/dashboard", element: <Dashboard/>},
+      { path: "/profile", element: <Profile/>},
+      { path: "/notification", element: <Notification/>}
 
     ],
   },

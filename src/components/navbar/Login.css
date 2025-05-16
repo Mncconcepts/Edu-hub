@@ -1,15 +1,20 @@
 .bodyyyy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #a5b8dd, #9ba3adc7);
-    margin: 0;
-    padding: 20px;
-    overflow: hidden;
-    overflow-x: hidden;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to bottom, #a5b8dd, #6583a7a9),
+    url('/places1.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
   .form-container {
     padding: 30px 20px;
     border-radius: 10px;
@@ -125,7 +130,6 @@
     }
   }
   
-  /* Register Link */
   .register {
     margin-top: 10px;
     font-size: 14px;
