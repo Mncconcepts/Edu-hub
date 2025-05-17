@@ -90,7 +90,7 @@ const About2 = () => {
                 <div data-aos="fade-up" className="aboutt-left">
                     {aboutContent.map((item, index) => (
                         <div className="aboutt-text" key={index}>
-                            <h2 data-aos="fade-down" className="" >{item.title}</h2>
+                            <h2 data-aos="fade-right" className="" >{item.title}</h2>
                             <p>{item.text}</p>
                         </div>
                     ))}
@@ -146,8 +146,9 @@ const About2 = () => {
                 <div className="overlay"></div>
 
                 <div data-aos="zoom-in" className="center-image">
-                    <div className="youtube-icon">
+                    <div className="youtube-icon ms-1">
                         <img src="/youtube1.png" alt="YouTube" />
+                        <p>Watch Video</p>
                     </div>
                 </div>
             </div>
@@ -160,7 +161,7 @@ const About2 = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="aboutt-stats" ref={statsRef}>
+            <div className="about-stats" ref={statsRef}>
                 {statsData.map((stat, index) => (
                     <div key={index} className="statt-item">
                         <h2>{counts[index]}</h2>

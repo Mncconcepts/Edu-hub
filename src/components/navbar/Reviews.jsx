@@ -15,7 +15,7 @@ const Reviews = () => {
     return (
         <div className='reviews-container'>
             <div data-aos="fade-down" className='reviews-header'>
-                <h1>What Our Students Say</h1>
+                <h1>WHAT OUR STUDENTS SAY</h1>
             </div>
             <div className='reviews-slider'>
                 {reviews.map((review) => (
@@ -30,7 +30,7 @@ const Reviews = () => {
                     </div>
                 ))}
             </div>
-            <div className="partnership-section">
+            <div className="partnership-section w-full">
                 <div className="slidingg-text">
                     <h3>OUR PARTNERS: SUPPORTERS LOGOS AND OTHER EDUCATIONAL HUB LOGOS</h3>
                 </div>
