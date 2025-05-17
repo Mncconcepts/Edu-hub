@@ -148,7 +148,7 @@ const About2 = () => {
                 <div data-aos="zoom-in" className="center-image">
                     <div className="youtube-icon ms-1">
                         <img src="/youtube1.png" alt="YouTube" />
-                        <p>Watch Video</p>
+                        <p className="text-white">Watch Video</p>
                     </div>
                 </div>
             </div>
