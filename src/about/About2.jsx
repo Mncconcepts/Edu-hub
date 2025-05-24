@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./About2.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const aboutContent = [
     {
@@ -94,7 +95,9 @@ const About2 = () => {
                             <p>{item.text}</p>
                         </div>
                     ))}
+                    <Link to="/admission">
                     <button className="btnn font-bold" type="submit">Apply Now</button>
+                    </Link>
                 </div>
 
                 <div data-aos="zoom-in" className="aboutt-right">
