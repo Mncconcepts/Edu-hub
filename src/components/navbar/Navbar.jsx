@@ -192,6 +192,7 @@ const Navbar = () => {
 
 
                 <ul className="nav-links">
+                    <li><a href="#dashboard" onClick={handleNavClick}>Dashboard</a></li>
                     <li><a href="#home" onClick={handleNavClick}>Home</a></li>
                     <li><a href="#about" onClick={handleNavClick}>About</a></li>
                     <li className="dropdown">
@@ -329,6 +330,7 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li><a href="#contact">CONTACT</a></li>
+                     <li><a href="#dashboard" onClick={handleNavClick}>DASHBOARD</a></li>
                 </ul>
                 <div className="search-container">
                     <input

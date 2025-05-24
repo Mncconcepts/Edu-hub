@@ -1,7 +1,6 @@
 .bd {
-    background: #f4f6f8;
+    background: #ffffff;
     min-height: 100vh;
-
 }
 
 .container {
@@ -23,7 +22,7 @@
 
 .profilee-cover {
     height: 120px;
-    background: linear-gradient(to right, #6a11cb, #09275a);
+    background: linear-gradient(to right, #421077, #07204b);
     border-radius: 12px 12px 0 0;
 }
 
